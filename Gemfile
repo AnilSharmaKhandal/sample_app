@@ -28,6 +28,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
  gem 'capybara', '1.1.2'
 
  gem 'minitest', '5.5.0'
+ 
+
+  gem 'bootstrap-sass', '2.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
