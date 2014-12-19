@@ -28,10 +28,26 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
  gem 'capybara', '1.1.2'
 
  gem 'minitest', '5.5.0'
+  
  
+ gem "bcrypt-ruby", :require => "bcrypt"
 
   gem 'bootstrap-sass', '2.1'
 
+
+gem 'actionpack'
+
+gem 'rspec-core'
+
+ 
+
+
+
+#gem 'activerecords'
+
+gem 'activesupport', '~> 4.1.8'
+
+gem 'railties'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
