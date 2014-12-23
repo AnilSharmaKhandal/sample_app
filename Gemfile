@@ -32,6 +32,8 @@ gem 'minitest', '5.5.0'
 
 gem 'faker'
 
+gem 'rake'
+
 gem 'will_paginate'
 
 gem 'bootstrap-will_paginate'
@@ -46,6 +48,8 @@ gem 'bootstrap-sass', '2.1'
 gem 'actionpack'
 
 gem 'rspec-core'
+
+gem 'heroku'
 
 #gem 'activerecords'
 
