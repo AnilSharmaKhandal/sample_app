@@ -30,6 +30,11 @@ gem 'capybara', '1.1.2'
 
 gem 'minitest', '5.5.0'
 
+gem 'faker'
+
+gem 'will_paginate'
+
+gem 'bootstrap-will_paginate'
  
   
 
