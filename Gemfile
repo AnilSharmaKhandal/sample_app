@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -11,14 +11,14 @@ gem "bcrypt-ruby", :require => "bcrypt"
 
 gem 'activesupport', '~> 4.1.8'
 gem 'will_paginate',           '3.0.7'
-gem 'bootstrap-will_paginate', '0.0.10'
-#gem 'faker',                '1.4.2'
-gem 'bootstrap-sass', '2.1'
+gem 'bootstrap-will_paginate' 
+gem 'faker' 
+gem 'bootstrap-sass'
 gem 'sqlite3', '1.3.10'
 
 
 #gem for image upload
-#gem 'carrierwave',             '0.10.0'
+gem 'carrierwave'
 #for cloud storge of our image
 gem 'fog',                     '1.23.0'
 #for image resize
