@@ -14,7 +14,6 @@ gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate' 
 gem 'faker' 
 gem 'bootstrap-sass'
-gem 'sqlite3', '1.3.10'
 
 
 #gem for image upload
@@ -46,6 +45,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 group :development do
   gem 'rspec-rails'
+  gem 'sqlite3', '1.3.10'
+
 end
 
 
