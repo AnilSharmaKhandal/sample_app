@@ -1,11 +1,29 @@
 source 'http://rubygems.org'
- ruby '2.1.5'
- 
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+gem "bcrypt-ruby", :require => "bcrypt"
+  
+ #gem 'unicorn',        '4.8.3'
+
+gem 'activesupport', '~> 4.1.8'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+#gem 'faker',                '1.4.2'
+gem 'bootstrap-sass', '2.1'
+gem 'sqlite3', '1.3.10'
+
+
+#gem for image upload
+#gem 'carrierwave',             '0.10.0'
+#for cloud storge of our image
+gem 'fog',                     '1.23.0'
+#for image resize
+gem 'mini_magick',             '3.8.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,44 +42,24 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'rspec-rails', '2.11.0'
-
-gem 'capybara', '1.1.2'
-
-gem 'minitest', '5.5.0'
-
-gem 'faker'
-
-gem 'rake'
-
-gem 'will_paginate'
-
-gem 'bootstrap-will_paginate'
- 
-  
-
-gem "bcrypt-ruby", :require => "bcrypt"
-
-gem 'bootstrap-sass', '2.1'
-
-
-gem 'actionpack'
-
-gem 'rspec-core'
-
-gem 'heroku'
-
-#gem 'activerecords'
-
-gem 'activesupport', '~> 4.1.8'
-
-gem 'railties'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+group :development do
+  gem 'rspec-rails'
+end
+
+
+group :test do
+  
+  gem 'webrat'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :production do
+ gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -69,4 +67,4 @@ gem 'railties'
 # gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'tzinfo-data'
