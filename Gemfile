@@ -59,7 +59,11 @@ end
 # gem 'unicorn'
 group :production do
  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+ gem 'rails_12factor', '0.0.2'
+ gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+
+
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
