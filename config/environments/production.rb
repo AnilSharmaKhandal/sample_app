@@ -62,8 +62,8 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
-    port: 587,
-    domain: "herokuapp.com",          
+    port:     '587',
+    domain: "heroku.com",          
     user_name: "anilkh65@gmail.com",
     password: "ongraph8",
     authentication: "plain", 
