@@ -211,6 +211,7 @@ DEPENDENCIES
   jquery-rails
   mini_magick (= 3.8.0)
   pg (= 0.17.1)
+  rack-test
   rails (= 4.1.8)
   rails3_serve_static_assets!
   rails_12factor (= 0.0.2)

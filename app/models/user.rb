@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+   has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
@@ -47,7 +48,7 @@ class User < ActiveRecord::Base
 
   # Sends activation email.
   def send_activation_email
-    UserMailer.account_activation(self).deliver!
+    UserMailer.account_activation(self).deliver
   end
 
    # Sets the password reset attributes.
@@ -67,6 +68,14 @@ class User < ActiveRecord::Base
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
   end
+
+  # Defines a proto-feed.
+  # See "Following users" for the full implementation.
+  def feed
+    Micropost.where("user_id = ?", id)
+    #Micropost
+  end
+
 
   
   private
