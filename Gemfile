@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-
+  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
@@ -53,6 +53,10 @@ end
 group :test do
   gem 'rack-test'
   gem 'webrat'
+  gem 'rspec'
+  gem 'spork' 
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 # Use unicorn as the app server
